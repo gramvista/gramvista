@@ -5,7 +5,7 @@
 - Pages project: `gramvista-corporate`; production deployment completed.
 - Deployment: `https://gramvista-corporate.pages.dev`.
 - Source repository: `https://github.com/gramvista/gramvista` (branch `main`).
-- Production domain: `gramvistaempiregroup.com`.
+- Live website: `https://gramvistaempiregroup.com` (HTTPS and browser checks passed on 2026-09-15).
 - Actual hosting configuration: `wrangler.toml`.
 - Contact email: `gramvistagroup@gmail.com`.
 - WhatsApp: `255758443438`.
@@ -28,7 +28,7 @@ Use `npm.cmd` in PowerShell if execution policy blocks `npm.ps1`. Run `npm run c
 
 ## Connect the main domain
 
-The main domain has been attached to the Pages project. DNS activation is pending: create a proxied CNAME with Name `@`, Target `gramvista-corporate.pages.dev`, and TTL Auto in the domain DNS settings. The current Wrangler OAuth login cannot edit DNS records. Preserve existing DNS records for the SMS and Mteja portals. Wait for the domain and certificate to become Active.
+The main domain is attached to the Pages project and its proxied DNS record is configured. HTTPS returned 200 OK. Live browser checks passed for Home, Company, Services, Products, Projects, Contact, Quote, Privacy and Terms, including founder image loading and prepared email/WhatsApp links. No test messages were sent. Cloudflare's domain-validation status was still pending at the last API check despite the website serving successfully over HTTPS. Preserve the DNS records for this site and the separate SMS and Mteja portals.
 
 Reference: https://developers.cloudflare.com/pages/configuration/custom-domains/
 
