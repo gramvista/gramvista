@@ -1,0 +1,52 @@
+[
+  {
+    "name": "hero-main",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-df235eac-45dc-40a9-a321-21c522e62a16.png",
+    "destination": "public/images/hero/hero-main.webp"
+  },
+  {
+    "name": "software-solutions",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-add1e9e4-071a-4b22-8ee2-bbae20a191c1.png",
+    "destination": "public/images/services/software-solutions.webp"
+  },
+  {
+    "name": "database-management",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-4a5f5d26-5db0-408c-86b6-f54b77af67b6.png",
+    "destination": "public/images/services/database-management.webp"
+  },
+  {
+    "name": "social-media-management",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-0c91530b-9d25-416c-9c90-30e19c0d5cb6.png",
+    "destination": "public/images/services/social-media-management.webp"
+  },
+  {
+    "name": "computers-electronics",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-824f8ed0-dd7d-4869-a4a4-338f7ffbceb0.png",
+    "destination": "public/images/services/computers-electronics.webp"
+  },
+  {
+    "name": "cctv-security",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-a05dfd91-5c21-407e-bffe-c255f9227516.png",
+    "destination": "public/images/services/cctv-security.webp"
+  },
+  {
+    "name": "networking",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-6fbeb30c-c3fe-4bf0-886d-284cafd19b15.png",
+    "destination": "public/images/services/networking.webp"
+  },
+  {
+    "name": "wireless-internet",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-7e4bd6e4-feac-4473-b695-884d7a78ad58.png",
+    "destination": "public/images/services/wireless-internet.webp"
+  },
+  {
+    "name": "technical-support",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-1b1b18f3-a11c-4965-bc40-bf51e59a0a10.png",
+    "destination": "public/images/services/technical-support.webp"
+  },
+  {
+    "name": "about-office",
+    "source": "C:\\Users\\yopinto\\.codex\\generated_images\\01a0a05b-eae1-71c0-a4a7-29b430c43cfe\\exec-b0ef5677-09b6-4b36-9dc9-e4aadf4cb8cd.png",
+    "destination": "public/images/company/about-office.webp"
+  }
+]
