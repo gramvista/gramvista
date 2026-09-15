@@ -2,10 +2,11 @@ import { company } from "../data/company";
 export function updateSeo(title: string, description: string, path: string) {
   document.title =
     path === "/"
-      ? `${company.legalName} | Technology Solutions & Digital Products`
+      ? `${company.legalName} | Technology Solutions & Digital Products in Tanzania`
       : title.includes(company.legalName) ? title : `${title} | ${company.legalName}`;
   for (const [key, content] of Object.entries({
     description,
+    robots: /not found/i.test(title) ? "noindex, follow" : "index, follow, max-image-preview:large",
     "og:title": document.title,
     "og:description": description,
     "og:url": new URL(path, company.website).href,

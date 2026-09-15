@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "./components/layout/MainLayout";
 import HomePage from "./pages/HomePage";
 const AboutPage = lazy(() => import("./pages/AboutPage"));
@@ -14,7 +14,7 @@ const TermsPage = lazy(() => import("./pages/TermsPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 export default function App() {
   return (
-    <BrowserRouter>
+    <>
       <Suspense
         fallback={
           <div className="loading" role="status">
@@ -38,6 +38,6 @@ export default function App() {
           </Route>
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </>
   );
 }

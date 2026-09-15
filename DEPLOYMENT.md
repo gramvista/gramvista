@@ -40,7 +40,7 @@ Reference: https://developers.cloudflare.com/pages/configuration/custom-domains/
 - The website must say nothing has been sent until the visitor sends it in their app. It cannot confirm delivery.
 - Confirm HTTPS, responsive navigation and unique page metadata.
 
-The build emits metadata and Organization structured data for all public routes. `_redirects` provides SPA fallback; `_headers` supplies security headers. No Function is needed for direct contact.
+The build emits metadata and Organization structured data for all public routes. `404.html` handles unknown routes and host-specific headers mark Pages preview hostnames noindex; `_headers` supplies security headers. No Function is needed for direct contact.
 
 ## Future maintenance
 

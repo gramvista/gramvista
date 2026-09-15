@@ -19,6 +19,7 @@ export function AssetImage({
       width="1200"
       height="800"
       loading={eager ? "eager" : "lazy"}
+      decoding="async"
       onError={() => setFailed(true)}
     />
   );

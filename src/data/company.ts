@@ -17,7 +17,7 @@ export const company = {
   heroDescription:
     "Software, digital solutions, networking, electronics, security and connectivity, alongside our own technology products. Practical solutions for your organization.",
   seoDescription:
-    "Gramvista Empire Group Limited provides software, database services, digital management, electronics, networking, CCTV, connectivity and technical solutions, alongside Gramvista SMS and Mteja Connect business platforms.",
+    "Gramvista is a technology company in Arusha, Tanzania providing software, networking, CCTV and digital solutions, plus Gramvista SMS and Mteja Connect.",
   introduction:
     "Gramvista Empire Group Limited is a technology company working across software, digital services, electronics, networking, connectivity and security solutions. We help customers solve practical technology challenges while also developing digital products designed for broader use.",
   aboutDescription:

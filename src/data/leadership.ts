@@ -1,5 +1,5 @@
-import lussaPortrait from "../assets/lussa.png";
-import pintoPortrait from "../assets/pinto.png";
+import lussaPortrait from "../assets/lussa.webp";
+import pintoPortrait from "../assets/pinto.webp";
 
 export const leadership: { name: string; role: string; bio: string; image?: string; imagePosition?: string; initials: string }[] = [
   {

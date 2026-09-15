@@ -12,7 +12,7 @@ npm run lint
 npm test
 ```
 
-On PowerShell systems that block npm.ps1, use `npm.cmd`. Node 22.12+ is recommended. Production output is `dist`. The build also generates unique HTML metadata and Organization JSON-LD for all 17 public routes so social previews do not depend on JavaScript. Page content uses the existing React application and lazy-loaded routes.
+On PowerShell systems that block npm.ps1, use `npm.cmd`. Node 22.12+ is recommended. Production output is `dist`. The build also generates unique HTML metadata and Organization JSON-LD for all 17 public routes so social previews do not depend on JavaScript. All public pages also include their actual content in the initial HTML, with React hydration and lazy-loaded routes for interactions.
 
 ## Content maintenance
 
@@ -30,7 +30,7 @@ On PowerShell systems that block npm.ps1, use `npm.cmd`. Node 22.12+ is recommen
 
 Both product portals use HTTPS and open in the same tab. Add products through the data file; the homepage, Products page, contact choices and footer update automatically. Projects currently presents the company's own products and capabilities; no client projects or testimonials are fabricated.
 
-Founder portraits are imported from `src/assets/lussa.png` and `src/assets/pinto.png` in `src/data/leadership.ts`. Replace the images or update these imports for future portraits. Equal cards and responsive crops are provided; missing or failed images show initials. Existing service/office photographs remain illustrative, not claimed as Gramvista staff or client premises.
+Founder portraits are imported from `src/assets/lussa.webp` and `src/assets/pinto.webp` in `src/data/leadership.ts`. Replace the images or update these imports for future portraits. Equal cards and responsive crops are provided; missing or failed images show initials. Existing service/office photographs remain illustrative, not claimed as Gramvista staff or client premises.
 
 Only Instagram is currently published. Add future social accounts as real URLs in `socialLinks.ts`. Future corporate email aliases are recorded in `company.futureEmails`, but are not displayed as active mailboxes. After a mailbox is configured, change `company.email` and the backend `INQUIRY_TO` secret independently.
 
@@ -45,3 +45,5 @@ Recipients come from `src/data/company.ts`; link construction is in `src/utils/d
 Playwright tests cover routes, assets, metadata, responsive overflow (320–1920 px), keyboard navigation, accessibility and form behavior. Direct-contact tests inspect prepared links without sending any messages. Run `npx playwright install chromium` if a browser is missing.
 
 The one-off draft upgrade scripts were retired to prevent overwriting maintained production content. Asset preparation scripts remain available.
+
+SEO, Google indexing setup, caching and security details are documented in [SEO-SECURITY.md](SEO-SECURITY.md).

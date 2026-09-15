@@ -4,14 +4,15 @@
   "description": "Gramvista Empire Group Limited corporate website",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc --noEmit && vite build && node scripts/seo.mjs",
+    "build": "tsc --noEmit && vite build && vite build --ssr src/entry-server.tsx --outDir .wrangler/ssr && node scripts/seo.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "playwright test",
     "cf:login": "wrangler login",
     "cf:dev": "wrangler pages dev dist",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name gramvista-corporate --branch main"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name gramvista-corporate --branch main",
+    "test:built": "node scripts/check-built.mjs"
   },
   "keywords": [],
   "author": "",

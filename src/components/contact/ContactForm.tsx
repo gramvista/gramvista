@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { FormEvent } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
@@ -19,6 +19,11 @@ export function ContactForm({ quote = false }: { quote?: boolean }) {
     "Other",
   ];
   const preset = params.get("service") || "";
+  const serviceSelect = useRef<HTMLSelectElement>(null);
+  useEffect(() => {
+    const select = serviceSelect.current;
+    if (select && Array.from(select.options).some(option => option.value === preset)) select.value = preset;
+  }, [preset]);
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setDraft(null);
@@ -76,6 +81,8 @@ export function ContactForm({ quote = false }: { quote?: boolean }) {
     );
   }
   return (
+    <>
+    <noscript><style>{".inquiry-form { display: none; }"}</style><p>Contact us by <a href={`mailto:${company.email}`}>email</a> or <a href={`https://wa.me/${company.whatsapp}`}>WhatsApp</a>. Enable JavaScript to prepare a detailed message here.</p></noscript>
     <form className="inquiry-form" onSubmit={submit} onChange={() => setDraft(null)} noValidate>
       <div className="form-heading">
         <h2>
@@ -97,7 +104,8 @@ export function ContactForm({ quote = false }: { quote?: boolean }) {
           <select
             id="service"
             name="service"
-            defaultValue={serviceOptions.includes(preset) ? preset : ""}
+            ref={serviceSelect}
+            defaultValue=""
             required
             aria-invalid={Boolean(errors.service)}
             aria-describedby={errors.service ? "service-error" : undefined}
@@ -162,5 +170,6 @@ export function ContactForm({ quote = false }: { quote?: boolean }) {
         <p>If your email app does not open, copy the message into your email service and send it to <a href={`mailto:${company.email}`}>{company.email}</a>.</p>
       </div>}
     </form>
+    </>
   );
 }
