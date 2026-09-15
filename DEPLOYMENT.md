@@ -2,7 +2,9 @@
 
 ## Current configuration
 
-- Pages project: `gramvista-corporate` (created in the connected account).
+- Pages project: `gramvista-corporate`; production deployment completed.
+- Deployment: `https://gramvista-corporate.pages.dev`.
+- Source repository: `https://github.com/gramvista/gramvista` (branch `main`).
 - Production domain: `gramvistaempiregroup.com`.
 - Actual hosting configuration: `wrangler.toml`.
 - Contact email: `gramvistagroup@gmail.com`.
@@ -26,7 +28,7 @@ Use `npm.cmd` in PowerShell if execution policy blocks `npm.ps1`. Run `npm run c
 
 ## Connect the main domain
 
-In Cloudflare, open **Workers & Pages > gramvista-corporate > Custom domains > Set up a custom domain**, enter `gramvistaempiregroup.com`, and follow the prompts. Cloudflare nameservers are already active. Preserve existing DNS records for the SMS and Mteja portals. Wait for the domain and certificate to become Active.
+The main domain has been attached to the Pages project. DNS activation is pending: create a proxied CNAME with Name `@`, Target `gramvista-corporate.pages.dev`, and TTL Auto in the domain DNS settings. The current Wrangler OAuth login cannot edit DNS records. Preserve existing DNS records for the SMS and Mteja portals. Wait for the domain and certificate to become Active.
 
 Reference: https://developers.cloudflare.com/pages/configuration/custom-domains/
 
