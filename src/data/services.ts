@@ -134,7 +134,7 @@ export const services: Service[] = [
     shortDescription:
       "Technology devices, computer equipment, mobile devices and accessories selected for business and personal requirements.",
     longDescription:
-      "Gramvista supports computer supply, setup, maintenance and related business technology equipment for individuals, businesses and organizations. Our approach is not simply to sell devicesâ€”we help customers select technology that matches their intended use, performance requirements and budget.",
+      "Gramvista supports computer supply, setup, maintenance and related business technology equipment for individuals, businesses and organizations. Our approach is not simply to sell devices—we help customers select technology that matches their intended use, performance requirements and budget.",
     statement: "The right equipment for the work you need to do.",
     image: "/images/services/computers-electronics.webp",
     imageAlt: "Laptop, mobile devices and accessories on a clean display table",
@@ -274,7 +274,7 @@ export const services: Service[] = [
     longDescription:
       "Technology becomes valuable when it works reliably. Gramvista provides technical support to help customers install, configure, maintain and troubleshoot the devices, networks and systems they depend on. Support can cover individual technology issues as well as ongoing organizational requirements.",
     statement:
-      "Technology support when something needs to workâ€”not just when it needs to be sold.",
+      "Technology support when something needs to work—not just when it needs to be sold.",
     image: "/images/services/technical-support.webp",
     imageAlt: "IT technician assisting a business user with a laptop",
     accent: "royal",
@@ -294,7 +294,7 @@ export const services: Service[] = [
     solutions: [
       "Diagnosis of a recurring computer, software or connectivity problem.",
       "Setup and configuration of newly purchased equipment.",
-      "An agreed maintenance plan for an organizationâ€™s devices and systems.",
+      "An agreed maintenance plan for an organization’s devices and systems.",
     ],
     approach:
       "We start by understanding the symptoms and the affected equipment. We diagnose the cause, explain the recommended action and verify the result, with ongoing support agreed according to your needs.",

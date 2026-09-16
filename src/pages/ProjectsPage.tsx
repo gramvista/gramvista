@@ -43,7 +43,7 @@ export default function ProjectsPage() {
                   <AssetImage src={p.image} alt={p.title} />
                   <span className="eyebrow">
                     {p.category}
-                    {p.year && ` Â· ${p.year}`}
+                    {p.year && ` · ${p.year}`}
                   </span>
                   <h2>{p.title}</h2>
                   <p>{p.description}</p>

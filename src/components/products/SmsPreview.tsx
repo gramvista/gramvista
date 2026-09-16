@@ -36,12 +36,12 @@ export function SmsPreview() {
             <div className="sms-metrics">
               <div>
                 <span>SMS balance</span>
-                <strong>â€”</strong>
+                <strong>—</strong>
                 <small>Ready for your account</small>
               </div>
               <div>
                 <span>Contacts</span>
-                <strong>â€”</strong>
+                <strong>—</strong>
                 <small>Your audience, organized</small>
               </div>
             </div>
@@ -66,7 +66,7 @@ export function SmsPreview() {
         <span>Messaging on the move.</span>
         <div>
           <small>SMS balance</small>
-          <b>â€”</b>
+          <b>—</b>
         </div>
         <div>
           <small>Campaigns</small>
